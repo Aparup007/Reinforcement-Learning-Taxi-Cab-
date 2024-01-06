@@ -1,0 +1,40 @@
+#What is Reinforcement Learning
+Reinforcement Learning (RL) is the science of decision making. It is about learning the optimal behavior in an environment to obtain maximum reward.
+This optimal behavior is learned through interactions with the environment and observations of how it responds, similar to children exploring the world around them and learning the actions that help them achieve a goal.
+#What is Q-learning and How does Q-learning work?
+Q-learning is a machine learning approach that enables a model to iteratively learn and improve over time by taking the correct action.
+Q-learning models operate in an iterative process that involves multiple components working together to help train a model. The iterative process involves the agent learning by exploring the environment and updating the model as the exploration continues. The multiple components of Q-learning include the following:
+
+Agents. The agent is the entity that acts and operates within an environment.
+States. The state is a variable that identifies the current position in an environment of an agent.
+Actions. The action is the agent's operation when it is in a specific state.
+Rewards. A foundational concept within reinforcement learning is the concept of providing either a positive or a negative response for the agent's actions.
+Episodes. An episode is when an agent can no longer take a new action and ends up terminating.
+Q-values. The Q-value is the metric used to measure an action at a particular state.
+
+#What is a Q-table?
+The Q-table includes columns and rows with lists of rewards for the best actions of each state in a specific environment. A Q-table helps an agent understand what actions are likely to lead to positive outcomes in different situations.
+
+The table rows represent different situations the agent might encounter, and the columns represent the actions it can take. As the agent interacts with the environment and receives feedback in the form of rewards or penalties, the values in the Q-table are updated to reflect what the model has learned.
+
+The purpose of reinforcement learning is to gradually improve performance through the Q-table to help choose actions. With more feedback, the Q-table becomes more accurate so the agent can make better decisions and achieve optimal results.
+
+The Q-table is directly related to the concept of the Q-function. The Q-function is a mathematical equation that looks at the current state of the environment and the action under consideration as inputs. The Q-function then generates outputs along with expected future rewards for that action in the specific state. The Q-table allows the agent to look up the expected future reward for any given state-action pair to move toward an optimized state.
+
+#What is the Q-learning algorithm process?
+The Q-learning algorithm process is an interactive method where the agent learns by exploring the environment and updating the Q-table based on the rewards received.
+
+The steps involved in the Q-learning algorithm process include the following:
+
+Q-table initialization. The first step is to create the Q-table as a place to track each action in each state and the associated progress.
+Observation. The agent needs to observe the current state of the environment.
+Action. The agent chooses to act in the environment. Upon completion of the action, the model observes if the action is beneficial in the environment.
+Update. After the action has been taken, it's time to update the Q-table with the results.
+Repeat. Repeat steps 2-4 until the model reaches a termination state for a desired objective.
+What are the advantages of Q-learning?
+The Q-learning approach to reinforcement learning can potentially be advantageous for several reasons, including the following:
+
+Model-free. The model-free approach is the foundation of Q-learning and one of the biggest potential advantages for some uses. Rather than requiring prior knowledge about an environment, the Q-learning agent can learn about the environment as it trains. The model-free approach is particularly beneficial for scenarios where the underlying dynamics of an environment are difficult to model or completely unknown.
+Off-policy optimization. The model can optimize to get the best possible result without being strictly tethered to a policy that might not enable the same degree of optimization.
+Flexibility. The model-free, off-policy approach enables Q-learning flexibility to work across a variety of problems and environments.
+Offline training. A Q-learning model can be deployed on pre-collected, offline data sets.
